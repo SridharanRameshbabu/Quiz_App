@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a href="#" class="navbar-brand ms-4">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ms-auto me-4 d-flex align-items-center">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link links py-0">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#offcanvasExample" class="nav-link links py-0" data-bs-toggle="offcanvas">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link links py-0">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container d-flex align-items-center justify-content-center vh-100 content text-center">
+        <div>
+            <h1 class="fw-bold">Welcome to Brain Test</h1>
+            <h5 class="fs-5">Challenge your mind, one quiz at a time!</h5>
+            <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Start Quiz</button>
+        </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header py-0">
+            <h1 class="offcanvas-title" id="offcanvasExampleLabel">Categories</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-0 sidebar">
+            <div>
+                <ul class="text-center p-3">
+                    <li>
+                        <button onclick="question1()">Sports</button>
+                    </li>
+                    <li>
+                        <button onclick="question2()">General Knowledge</button>
+                    </li>
+                    <li>
+                        <button onclick="question3()">Science & Technology</button>
+                    </li>
+                    <li>
+                        <button onclick="question4()">History</button>
+                    </li>
+                    <li>
+                        <button onclick="question5()">Geography</button>
+                    </li>
+                    <li>
+                        <button onclick="question6()">Mathematics</button>
+                    </li>
+                    <li>
+                        <button onclick="question7()">Literature & Books</button>
+                    </li>
+                    <li>
+                        <button onclick="question8()">Nature & Environment</button>
+                    </li>
+                    <li>
+                        <button onclick="question9()">Mythology</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container cont" id="cont">
+        <div class="question" id="q1">
+            <h1>1. Who is the only captain to win all three ICC trophies?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q1')" name=>MS Dhoni</div>
+                    <div class="option" onclick="selectOption(this, 'q1')">Ricky Ponting</div>
+                    <div class="option" onclick="selectOption(this, 'q1')">Rohit Sharma</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q2">
+            <h1>2. Which country has won the most ICC Cricket World Cups?</h1>
+            <div class="d-flex align-items-center">
+                    <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q2')">India</div>
+                    <div class="option" onclick="selectOption(this, 'q2')">Australia</div>
+                    <div class="option" onclick="selectOption(this, 'q2')">England</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>    
+        </div>
+
+        <div class="question" id="q3">
+            <h1>3. Which format is the shortest in professional cricket?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q3')">Test</div>
+                    <div class="option" onclick="selectOption(this, 'q3')">ODI</div>
+                    <div class="option" onclick="selectOption(this, 'q3')">T20</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>  
+        </div>  
+
+        <div class="question" id="q4">
+            <h1>4. Which athlete has won the most Olympic gold medals?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q4')">Michael Phelps</div>
+                    <div class="option" onclick="selectOption(this, 'q4')">Usain Bolt</div>
+                    <div class="option" onclick="selectOption(this, 'q4')">Simone Biles</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>  
+        </div>
+
+        <div class="question" id="q5">
+            <h1>5. Which country hosted the 2016 Summer Olympics?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q5')">Brazil</div>
+                    <div class="option" onclick="selectOption(this, 'q5')">China</div>
+                    <div class="option" onclick="selectOption(this, 'q5')">United Kingdom</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div> 
+        </div>
+
+        <div class="question" id="q6">
+            <h1>6. What is the national sport of Japan?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q6')">Sumo Wrestling</div>
+                    <div class="option" onclick="selectOption(this, 'q6')">Baseball</div>
+                    <div class="option" onclick="selectOption(this, 'q6')">Judo</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div> 
+        </div>
+
+        <div class="question" id="q7">
+            <h1>7. In which sport would you perform a slam dunk?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q7')">Basketball</div>
+                    <div class="option" onclick="selectOption(this, 'q7')">Tennis</div>
+                    <div class="option" onclick="selectOption(this, 'q7')">Football</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div> 
+        </div>
+
+        <div class="question" id="q8">
+            <h1>8. What is the maximum score possible in a single frame of ten-pin bowling?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q8')">30</div>
+                    <div class="option" onclick="selectOption(this, 'q8')">20</div>
+                    <div class="option" onclick="selectOption(this, 'q8')">40</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div> 
+        </div>
+
+        <div class="question" id="q9">
+            <h1>9. Which Grand Slam tennis tournament is played on a grass court?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q9')">Wimbledon</div>
+                    <div class="option" onclick="selectOption(this, 'q9')">US Open</div>
+                    <div class="option" onclick="selectOption(this, 'q9')">French Open</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div> 
+        </div>
+
+        <div class="question" id="q10">
+            <h1>10. Which footballer has won the most Ballon d'Or awards?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q10')">Lionel Messi</div>
+                    <div class="option" onclick="selectOption(this, 'q10')">Cristiano Ronaldo</div>
+                    <div class="option" onclick="selectOption(this, 'q10')">Neymar</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div> 
+        </div>
+
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont2">
+        <div class="question" id="q11">
+            <h1>1. Who developed the theory of relativity?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q11')">Albert Einstein</div>
+                    <div class="option" onclick="selectOption(this, 'q11')">Isaac Newton</div>
+                    <div class="option" onclick="selectOption(this, 'q11')">Nikola Tesla</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q12">
+            <h1>2. What is the capital of Japan?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q12')">Tokyo</div>
+                    <div class="option" onclick="selectOption(this, 'q12')">Osaka</div>
+                    <div class="option" onclick="selectOption(this, 'q12')">Kyoto</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q13">
+            <h1>3. Who wrote the famous book '1984'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q13')">George Orwell</div>
+                    <div class="option" onclick="selectOption(this, 'q13')">Aldous Huxley</div>
+                    <div class="option" onclick="selectOption(this, 'q13')">J.K. Rowling</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q14">
+            <h1>4. What is the largest planet in our solar system?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q14')">Jupiter</div>
+                    <div class="option" onclick="selectOption(this, 'q14')">Saturn</div>
+                    <div class="option" onclick="selectOption(this, 'q14')">Earth</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q15">
+            <h1>5. Who was the first woman to fly solo across the Atlantic Ocean?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q15')">Amelia Earhart</div>
+                    <div class="option" onclick="selectOption(this, 'q15')">Harriet Quimby</div>
+                    <div class="option" onclick="selectOption(this, 'q15')">Bessie Coleman</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q16">
+            <h1>6. What is the chemical symbol for gold?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q16')">Au</div>
+                    <div class="option" onclick="selectOption(this, 'q16')">Ag</div>
+                    <div class="option" onclick="selectOption(this, 'q16')">Fe</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q17">
+            <h1>7. Who painted the Mona Lisa?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q17')">Leonardo da Vinci</div>
+                    <div class="option" onclick="selectOption(this, 'q17')">Vincent van Gogh</div>
+                    <div class="option" onclick="selectOption(this, 'q17')">Pablo Picasso</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q18">
+            <h1>8. Who invented the telephone?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q18')">Alexander Graham Bell</div>
+                    <div class="option" onclick="selectOption(this, 'q18')">Thomas Edison</div>
+                    <div class="option" onclick="selectOption(this, 'q18')">Nikola Tesla</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q19">
+            <h1>9. What is the smallest country in the world?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q19')">Vatican City</div>
+                    <div class="option" onclick="selectOption(this, 'q19')">Monaco</div>
+                    <div class="option" onclick="selectOption(this, 'q19')">Nauru</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q20">
+            <h1>10. Who was the first man to walk on the moon?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q20')">Neil Armstrong</div>
+                    <div class="option" onclick="selectOption(this, 'q20')">Buzz Aldrin</div>
+                    <div class="option" onclick="selectOption(this, 'q20')">Yuri Gagarin</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont3">
+        <div class="question" id="q21">
+            <h1>1. Who is known as the father of modern physics?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q21')">Albert Einstein</div>
+                    <div class="option" onclick="selectOption(this, 'q21')">Isaac Newton</div>
+                    <div class="option" onclick="selectOption(this, 'q21')">Galileo Galilei</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q22">
+            <h1>2. What is the powerhouse of the cell?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q22')">Mitochondria</div>
+                    <div class="option" onclick="selectOption(this, 'q22')">Nucleus</div>
+                    <div class="option" onclick="selectOption(this, 'q22')">Ribosome</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q23">
+            <h1>3. Who invented the World Wide Web?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q23')">Tim Berners-Lee</div>
+                    <div class="option" onclick="selectOption(this, 'q23')">Bill Gates</div>
+                    <div class="option" onclick="selectOption(this, 'q23')">Mark Zuckerberg</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q24">
+            <h1>4. What does CPU stand for?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q24')">Central Processing Unit</div>
+                    <div class="option" onclick="selectOption(this, 'q24')">Central Power Unit</div>
+                    <div class="option" onclick="selectOption(this, 'q24')">Central Processor Unit</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q25">
+            <h1>5. What is the main function of the RAM in a computer?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q25')">Temporary data storage</div>
+                    <div class="option" onclick="selectOption(this, 'q25')">Permanent data storage</div>
+                    <div class="option" onclick="selectOption(this, 'q25')">Processing data</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q26">
+            <h1>6. What is the main component of the Earth's atmosphere?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q26')">Nitrogen</div>
+                    <div class="option" onclick="selectOption(this, 'q26')">Oxygen</div>
+                    <div class="option" onclick="selectOption(this, 'q26')">Carbon dioxide</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q27">
+            <h1>7. What is the largest type of computer memory?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q27')">Hard Drive</div>
+                    <div class="option" onclick="selectOption(this, 'q27')">RAM</div>
+                    <div class="option" onclick="selectOption(this, 'q27')">Cache</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q28">
+            <h1>8. What is the speed of light in a vacuum?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q28')">299,792,458 meters per second</div>
+                    <div class="option" onclick="selectOption(this, 'q28')">150,000,000 meters per second</div>
+                    <div class="option" onclick="selectOption(this, 'q28')">500,000 meters per second</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q29">
+            <h1>9. What programming language was developed by Sun Microsystems?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q29')">Java</div>
+                    <div class="option" onclick="selectOption(this, 'q29')">C++</div>
+                    <div class="option" onclick="selectOption(this, 'q29')">Python</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q30">
+            <h1>10. What is the most widely used search engine on the internet?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q30')">Google</div>
+                    <div class="option" onclick="selectOption(this, 'q30')">Yahoo</div>
+                    <div class="option" onclick="selectOption(this, 'q30')">Bing</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont4">
+        <div class="question" id="q31">
+            <h1>1. Who was the first President of the United States?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q31')">George Washington</div>
+                    <div class="option" onclick="selectOption(this, 'q31')">Thomas Jefferson</div>
+                    <div class="option" onclick="selectOption(this, 'q31')">Abraham Lincoln</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q32">
+            <h1>2. What year did World War II end?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q32')">1945</div>
+                    <div class="option" onclick="selectOption(this, 'q32')">1939</div>
+                    <div class="option" onclick="selectOption(this, 'q32')">1950</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q33">
+            <h1>3. Who discovered America?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q33')">Christopher Columbus</div>
+                    <div class="option" onclick="selectOption(this, 'q33')">Ferdinand Magellan</div>
+                    <div class="option" onclick="selectOption(this, 'q33')">Marco Polo</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q34">
+            <h1>4. Who was the first woman to fly solo across the Atlantic Ocean?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q34')">Amelia Earhart</div>
+                    <div class="option" onclick="selectOption(this, 'q34')">Harriet Tubman</div>
+                    <div class="option" onclick="selectOption(this, 'q34')">Eleanor Roosevelt</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q35">
+            <h1>5. What was the name of the ship that carried the Pilgrims to America in 1620?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q35')">Mayflower</div>
+                    <div class="option" onclick="selectOption(this, 'q35')">Nina</div>
+                    <div class="option" onclick="selectOption(this, 'q35')">Santa Maria</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q36">
+            <h1>6. In which year did the Berlin Wall fall?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q36')">1989</div>
+                    <div class="option" onclick="selectOption(this, 'q36')">1991</div>
+                    <div class="option" onclick="selectOption(this, 'q36')">1999</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q37">
+            <h1>7. Who was the first emperor of China?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q37')">Qin Shi Huang</div>
+                    <div class="option" onclick="selectOption(this, 'q37')">Kublai Khan</div>
+                    <div class="option" onclick="selectOption(this, 'q37')">Emperor Wu of Han</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q38">
+            <h1>8. Who was the famous queen of Egypt known for her relationships with Julius Caesar and Mark Antony?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q38')">Cleopatra</div>
+                    <div class="option" onclick="selectOption(this, 'q38')">Nefertiti</div>
+                    <div class="option" onclick="selectOption(this, 'q38')">Hatshepsut</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q39">
+            <h1>9. Who was the leader of the Soviet Union during World War II?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q39')">Joseph Stalin</div>
+                    <div class="option" onclick="selectOption(this, 'q39')">Vladimir Lenin</div>
+                    <div class="option" onclick="selectOption(this, 'q39')">Nikita Khrushchev</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q40">
+            <h1>10. In which year did the Titanic sink?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q40')">1912</div>
+                    <div class="option" onclick="selectOption(this, 'q40')">1915</div>
+                    <div class="option" onclick="selectOption(this, 'q40')">1920</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont5">
+        <div class="question" id="q41">
+            <h1>1. What is the capital city of France?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q41')">Paris</div>
+                    <div class="option" onclick="selectOption(this, 'q41')">London</div>
+                    <div class="option" onclick="selectOption(this, 'q41')">Berlin</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q42">
+            <h1>2. Which is the largest continent by area?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q42')">Asia</div>
+                    <div class="option" onclick="selectOption(this, 'q42')">Africa</div>
+                    <div class="option" onclick="selectOption(this, 'q42')">North America</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q43">
+            <h1>3. What is the longest river in the world?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q43')">Amazon River</div>
+                    <div class="option" onclick="selectOption(this, 'q43')">Nile River</div>
+                    <div class="option" onclick="selectOption(this, 'q43')">Yangtze River</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q44">
+            <h1>4. What is the smallest country in the world?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q44')">Vatican City</div>
+                    <div class="option" onclick="selectOption(this, 'q44')">Monaco</div>
+                    <div class="option" onclick="selectOption(this, 'q44')">San Marino</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q45">
+            <h1>5. Which ocean is the largest by area?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q45')">Pacific Ocean</div>
+                    <div class="option" onclick="selectOption(this, 'q45')">Atlantic Ocean</div>
+                    <div class="option" onclick="selectOption(this, 'q45')">Indian Ocean</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q46">
+            <h1>6. What is the largest desert in the world?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q46')">Sahara Desert</div>
+                    <div class="option" onclick="selectOption(this, 'q46')">Arabian Desert</div>
+                    <div class="option" onclick="selectOption(this, 'q46')">Gobi Desert</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q47">
+            <h1>7. Which country is known as the "Land of the Rising Sun"?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q47')">Japan</div>
+                    <div class="option" onclick="selectOption(this, 'q47')">China</div>
+                    <div class="option" onclick="selectOption(this, 'q47')">South Korea</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q48">
+            <h1>8. Which is the largest island in the world?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q48')">Greenland</div>
+                    <div class="option" onclick="selectOption(this, 'q48')">Australia</div>
+                    <div class="option" onclick="selectOption(this, 'q48')">New Guinea</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q49">
+            <h1>9. Which river is known as the "lifeline of Egypt"?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q49')">Nile River</div>
+                    <div class="option" onclick="selectOption(this, 'q49')">Amazon River</div>
+                    <div class="option" onclick="selectOption(this, 'q49')">Yangtze River</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q50">
+            <h1>10. Which is the highest mountain in the world?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q50')">Mount Everest</div>
+                    <div class="option" onclick="selectOption(this, 'q50')">K2</div>
+                    <div class="option" onclick="selectOption(this, 'q50')">Kangchenjunga</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont6">
+        <div class="question" id="q51">
+            <h1>1. What is the square root of 144?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q51')">12</div>
+                    <div class="option" onclick="selectOption(this, 'q51')">14</div>
+                    <div class="option" onclick="selectOption(this, 'q51')">16</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q52">
+            <h1>2. What is the value of Pi up to two decimal places?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q52')">3.14</div>
+                    <div class="option" onclick="selectOption(this, 'q52')">3.16</div>
+                    <div class="option" onclick="selectOption(this, 'q52')">3.12</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+  
+        <div class="question" id="q53">
+            <h1>3. What is the sum of the interior angles of a triangle?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q53')">180°</div>
+                    <div class="option" onclick="selectOption(this, 'q53')">360°</div>
+                    <div class="option" onclick="selectOption(this, 'q53')">90°</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q54">
+            <h1>4. What is the result of 9 × 8?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q54')">72</div>
+                    <div class="option" onclick="selectOption(this, 'q54')">64</div>
+                    <div class="option" onclick="selectOption(this, 'q54')">81</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q55">
+            <h1>5. What is the area of a circle with a radius of 7 cm? (Use π = 3.14)</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q55')">153.86 cm²</div>
+                    <div class="option" onclick="selectOption(this, 'q55')">100.48 cm²</div>
+                    <div class="option" onclick="selectOption(this, 'q55')">196.00 cm²</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q56">
+            <h1>6. What is the next prime number after 7?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q56')">11</div>
+                    <div class="option" onclick="selectOption(this, 'q56')">13</div>
+                    <div class="option" onclick="selectOption(this, 'q56')">17</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q57">
+            <h1>7. What is the perimeter of a square with side length 5 cm?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q57')">20 cm</div>
+                    <div class="option" onclick="selectOption(this, 'q57')">15 cm</div>
+                    <div class="option" onclick="selectOption(this, 'q57')">25 cm</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q58">
+            <h1>8. What is the value of 2⁵?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q58')">32</div>
+                    <div class="option" onclick="selectOption(this, 'q58')">64</div>
+                    <div class="option" onclick="selectOption(this, 'q58')">16</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q59">
+            <h1>9. What is the value of the expression 3x + 4 when x = 2?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q59')">10</div>
+                    <div class="option" onclick="selectOption(this, 'q59')">8</div>
+                    <div class="option" onclick="selectOption(this, 'q59')">12</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+  
+        <div class="question" id="q60">
+            <h1>10. What is the value of 15 ÷ 3?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q60')">5</div>
+                    <div class="option" onclick="selectOption(this, 'q60')">4</div>
+                    <div class="option" onclick="selectOption(this, 'q60')">6</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont7">
+        <div class="question" id="q61">
+            <h1>1. Who wrote the novel '1984'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q61')">George Orwell</div>
+                    <div class="option" onclick="selectOption(this, 'q61')">Aldous Huxley</div>
+                    <div class="option" onclick="selectOption(this, 'q61')">Ray Bradbury</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q62">
+            <h1>2. Who wrote the play 'Romeo and Juliet'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q62')">William Shakespeare</div>
+                    <div class="option" onclick="selectOption(this, 'q62')">Oscar Wilde</div>
+                    <div class="option" onclick="selectOption(this, 'q62')">Charles Dickens</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q63">
+            <h1>3. Who is the author of the 'Harry Potter' series?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q63')">J.K. Rowling</div>
+                    <div class="option" onclick="selectOption(this, 'q63')">George R.R. Martin</div>
+                    <div class="option" onclick="selectOption(this, 'q63')">J.R.R. Tolkien</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q64">
+            <h1>4. In which novel would you find the character 'Atticus Finch'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q64')">To Kill a Mockingbird</div>
+                    <div class="option" onclick="selectOption(this, 'q64')">Pride and Prejudice</div>
+                    <div class="option" onclick="selectOption(this, 'q64')">The Great Gatsby</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q65">
+            <h1>5. Who wrote 'The Catcher in the Rye'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q65')">J.D. Salinger</div>
+                    <div class="option" onclick="selectOption(this, 'q65')">F. Scott Fitzgerald</div>
+                    <div class="option" onclick="selectOption(this, 'q65')">Ernest Hemingway</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q66">
+            <h1>6. What is the title of the first book in 'The Lord of the Rings' trilogy?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q66')">The Fellowship of the Ring</div>
+                    <div class="option" onclick="selectOption(this, 'q66')">The Two Towers</div>
+                    <div class="option" onclick="selectOption(this, 'q66')">The Return of the King</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q67">
+            <h1>7. Who wrote 'Moby-Dick'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q67')">Herman Melville</div>
+                    <div class="option" onclick="selectOption(this, 'q67')">Mark Twain</div>
+                    <div class="option" onclick="selectOption(this, 'q67')">Nathaniel Hawthorne</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q68">
+            <h1>8. In which novel would you find the character 'Sherlock Holmes'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q68')">A Study in Scarlet</div>
+                    <div class="option" onclick="selectOption(this, 'q68')">The Hound of the Baskervilles</div>
+                    <div class="option" onclick="selectOption(this, 'q68')">The Sign of the Four</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q69">
+            <h1>9. Who wrote 'Pride and Prejudice'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q69')">Jane Austen</div>
+                    <div class="option" onclick="selectOption(this, 'q69')">Charlotte Brontë</div>
+                    <div class="option" onclick="selectOption(this, 'q69')">Virginia Woolf</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q70">
+            <h1>10. Who is the author of 'The Great Gatsby'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q70')">F. Scott Fitzgerald</div>
+                    <div class="option" onclick="selectOption(this, 'q70')">Ernest Hemingway</div>
+                    <div class="option" onclick="selectOption(this, 'q70')">John Steinbeck</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont8">
+        <div class="question" id="q71">
+            <h1>1. Which gas is most responsible for global warming?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q71')">Carbon Dioxide</div>
+                    <div class="option" onclick="selectOption(this, 'q71')">Oxygen</div>
+                    <div class="option" onclick="selectOption(this, 'q71')">Nitrogen</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q72">
+            <h1>2. What is the largest land animal?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q72')">Elephant</div>
+                    <div class="option" onclick="selectOption(this, 'q72')">Rhinoceros</div>
+                    <div class="option" onclick="selectOption(this, 'q72')">Giraffe</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q73">
+            <h1>3. Which is the largest ocean on Earth?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q73')">Pacific Ocean</div>
+                    <div class="option" onclick="selectOption(this, 'q73')">Atlantic Ocean</div>
+                    <div class="option" onclick="selectOption(this, 'q73')">Indian Ocean</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q74">
+            <h1>4. What is the main source of energy for the Earth?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q74')">The Sun</div>
+                    <div class="option" onclick="selectOption(this, 'q74')">The Moon</div>
+                    <div class="option" onclick="selectOption(this, 'q74')">Wind</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q75">
+            <h1>5. What percentage of the Earth's surface is covered by water?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q75')">71%</div>
+                    <div class="option" onclick="selectOption(this, 'q75')">50%</div>
+                    <div class="option" onclick="selectOption(this, 'q75')">30%</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q76">
+            <h1>6. What is the longest river in the world?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q76')">Amazon River</div>
+                    <div class="option" onclick="selectOption(this, 'q76')">Nile River</div>
+                    <div class="option" onclick="selectOption(this, 'q76')">Yangtze River</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q77">
+            <h1>7. Which forest is known as the 'lungs of the Earth'?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q77')">Amazon Rainforest</div>
+                    <div class="option" onclick="selectOption(this, 'q77')">Black Forest</div>
+                    <div class="option" onclick="selectOption(this, 'q77')">Boreal Forest</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q78">
+            <h1>8. Which is the most endangered species of rhinoceros?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q78')">Javan Rhino</div>
+                    <div class="option" onclick="selectOption(this, 'q78')">Indian Rhino</div>
+                    <div class="option" onclick="selectOption(this, 'q78')">White Rhino</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q79">
+            <h1>9. What is the term for a sudden and violent shaking of the Earth's surface?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q79')">Earthquake</div>
+                    <div class="option" onclick="selectOption(this, 'q79')">Tsunami</div>
+                    <div class="option" onclick="selectOption(this, 'q79')">Volcano</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q80">
+            <h1>10. What is the primary cause of deforestation?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q80')">Logging</div>
+                    <div class="option" onclick="selectOption(this, 'q80')">Urbanization</div>
+                    <div class="option" onclick="selectOption(this, 'q80')">Natural disasters</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <div class="container cont" id="cont9">
+        <div class="question" id="q81">
+            <h1>1. Which Greek god is known as the god of the sea?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q81')">Poseidon</div>
+                    <div class="option" onclick="selectOption(this, 'q81')">Zeus</div>
+                    <div class="option" onclick="selectOption(this, 'q81')">Hades</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q82">
+            <h1>2. In Norse mythology, who is the god of thunder?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q82')">Thor</div>
+                    <div class="option" onclick="selectOption(this, 'q82')">Odin</div>
+                    <div class="option" onclick="selectOption(this, 'q82')">Loki</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q83">
+            <h1>3. Who was the Greek hero that defeated the Minotaur?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q83')">Hercules</div>
+                    <div class="option" onclick="selectOption(this, 'q83')">Perseus</div>
+                    <div class="option" onclick="selectOption(this, 'q83')">Theseus</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q84">
+            <h1>4. In Hindu mythology, who is considered the god of destruction?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q84')">Vishnu</div>
+                    <div class="option" onclick="selectOption(this, 'q84')">Shiva</div>
+                    <div class="option" onclick="selectOption(this, 'q84')">Brahma</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q85">
+            <h1>5. Who is the Roman goddess of wisdom and strategic warfare?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q85')">Diana</div>
+                    <div class="option" onclick="selectOption(this, 'q85')">Venus</div>
+                    <div class="option" onclick="selectOption(this, 'q85')">Minerva</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q86">
+            <h1>6. Which Egyptian god is associated with the afterlife and is often depicted with the head of a jackal?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q86')">Anubis</div>
+                    <div class="option" onclick="selectOption(this, 'q86')">Horus</div>
+                    <div class="option" onclick="selectOption(this, 'q86')">Osiris</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q87">
+            <h1>7. In Greek mythology, who was punished by being turned into a spider?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q87')">Medusa</div>
+                    <div class="option" onclick="selectOption(this, 'q87')">Arachne</div>
+                    <div class="option" onclick="selectOption(this, 'q87')">Hera</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q88">
+            <h1>8. In Greek mythology, who was the god of war?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q88')">Ares</div>
+                    <div class="option" onclick="selectOption(this, 'q88')">Apollo</div>
+                    <div class="option" onclick="selectOption(this, 'q88')">Hades</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q89">
+            <h1>9. Who is the Greek goddess of love and beauty?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q89')">Hera</div>
+                    <div class="option" onclick="selectOption(this, 'q89')">Athena</div>
+                    <div class="option" onclick="selectOption(this, 'q89')">Aphrodite</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="question" id="q90">
+            <h1>10. In Hindu mythology, who is the god of preservation?</h1>
+            <div class="d-flex align-items-center">
+                <div class="left flex-grow-1">
+                    <div class="option" onclick="selectOption(this, 'q90')">Shiva</div>
+                    <div class="option" onclick="selectOption(this, 'q90')">Brahma</div>
+                    <div class="option" onclick="selectOption(this, 'q90')">Vishnu</div>
+                </div>
+                <div class="imgs ms-3" id="images">
+                    <img src="images/logo.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+    
+        <button class="btn btn-custom" onclick="checkAnswers()">Check Answers</button>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
