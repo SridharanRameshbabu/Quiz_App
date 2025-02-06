@@ -126,116 +126,124 @@ function checkAnswers() {
 
 }
 
-const showqn = document.getElementById('cont');
-const showqn2 = document.getElementById('cont2');
-const showqn3= document.getElementById('cont3');
-const showqn4 = document.getElementById('cont4');
-const showqn5 = document.getElementById('cont5');
-const showqn6 = document.getElementById('cont6');
-const showqn7 = document.getElementById('cont7');
-const showqn8 = document.getElementById('cont8');
-const showqn9 = document.getElementById('cont9');
+// const showqn = document.getElementById('cont');
+// const showqn2 = document.getElementById('cont2');
+// const showqn3= document.getElementById('cont3');
+// const showqn4 = document.getElementById('cont4');
+// const showqn5 = document.getElementById('cont5');
+// const showqn6 = document.getElementById('cont6');
+// const showqn7 = document.getElementById('cont7');
+// const showqn8 = document.getElementById('cont8');
+// const showqn9 = document.getElementById('cont9');
 
-function question1(){
-    showqn.style.display = "block";
-    showqn2.style.display = "none";
-    showqn3.style.display = "none";
-    showqn4.style.display = "none";
-    showqn5.style.display = "none";
-    showqn6.style.display = "none";
-    showqn7.style.display = "none";
-    showqn8.style.display = "none";
-    showqn9.style.display = "none";
-}
+// function question1(){
+//     showqn.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn9.style.display = "none";
+// }
 
-function question2(){
-    showqn2.style.display = "block";
-    showqn.style.display = "none";
-    showqn3.style.display = "none";
-    showqn4.style.display = "none";
-    showqn5.style.display = "none";
-    showqn6.style.display = "none";
-    showqn7.style.display = "none";
-    showqn8.style.display = "none";
-    showqn9.style.display = "none";
-}
+// function question2(){
+//     showqn2.style.display = "block";
+//     showqn.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn9.style.display = "none";
+// }
 
-function question3(){
-    showqn3.style.display = "block";
-    showqn2.style.display = "none";
-    showqn.style.display = "none";
-    showqn4.style.display = "none";
-    showqn5.style.display = "none";
-    showqn6.style.display = "none";
-    showqn7.style.display = "none";
-    showqn8.style.display = "none";
-    showqn9.style.display = "none";
+// function question3(){
+//     showqn3.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn9.style.display = "none";
 
-}
+// }
 
-function question4(){
-    showqn4.style.display = "block";
-    showqn2.style.display = "none";
-    showqn3.style.display = "none";
-    showqn.style.display = "none";
-    showqn5.style.display = "none";
-    showqn6.style.display = "none";
-    showqn7.style.display = "none";
-    showqn8.style.display = "none";
-    showqn9.style.display = "none";
-}
-function question5(){
-    showqn5.style.display = "block";
-    showqn2.style.display = "none";
-    showqn3.style.display = "none";
-    showqn.style.display = "none";
-    showqn4.style.display = "none";
-    showqn6.style.display = "none";
-    showqn7.style.display = "none";
-    showqn8.style.display = "none";
-    showqn9.style.display = "none";
-}
-function question6(){
-    showqn6.style.display = "block";
-    showqn2.style.display = "none";
-    showqn3.style.display = "none";
-    showqn4.style.display = "none";
-    showqn5.style.display = "none";
-    showqn.style.display = "none";
-    showqn7.style.display = "none";
-    showqn8.style.display = "none";
-    showqn9.style.display = "none";
-}
-function question7(){
-    showqn7.style.display = "block";
-    showqn2.style.display = "none";
-    showqn3.style.display = "none";
-    showqn4.style.display = "none";
-    showqn5.style.display = "none";
-    showqn6.style.display = "none";
-    showqn.style.display = "none";
-    showqn8.style.display = "none";
-    showqn9.style.display = "none";
-}
-function question8(){
-    showqn8.style.display = "block";
-    showqn2.style.display = "none";
-    showqn3.style.display = "none";
-    showqn4.style.display = "none";
-    showqn5.style.display = "none";
-    showqn6.style.display = "none";
-    showqn7.style.display = "none";
-    showqn.style.display = "none";
-    showqn9.style.display = "none";
-}
-function question9(){
-    showqn9.style.display = "block";
-    showqn2.style.display = "none";
-    showqn3.style.display = "none";
-    showqn4.style.display = "none";
-    showqn5.style.display = "none";
-    showqn6.style.display = "none";
-    showqn7.style.display = "none";
-    showqn8.style.display = "none";
-    showqn.style.display = "none";
+// function question4(){
+//     showqn4.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn9.style.display = "none";
+// }
+// function question5(){
+//     showqn5.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn9.style.display = "none";
+// }
+// function question6(){
+//     showqn6.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn9.style.display = "none";
+// }
+// function question7(){
+//     showqn7.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn9.style.display = "none";
+// }
+// function question8(){
+//     showqn8.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn.style.display = "none";
+//     showqn9.style.display = "none";
+// }
+// function question9(){
+//     showqn9.style.display = "block";
+//     showqn2.style.display = "none";
+//     showqn3.style.display = "none";
+//     showqn4.style.display = "none";
+//     showqn5.style.display = "none";
+//     showqn6.style.display = "none";
+//     showqn7.style.display = "none";
+//     showqn8.style.display = "none";
+//     showqn.style.display = "none";
+// }
+
+const questions = document.querySelectorAll('[id^="cont"]');
+
+function showQuestion(index) {
+    questions.forEach((question, i) => {
+        question.style.display = i === index - 1 ? "block" : "none";
+    });
 }
