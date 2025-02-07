@@ -92,7 +92,6 @@ const answers = {
 };
 
 
-// Select an option for a specific question
 function selectOption(selectedOption, questionName) {
     // Remove selection from all options in the same question
     document.querySelectorAll(`.option[data-question="${questionName}"]`).forEach(option => {
@@ -108,7 +107,6 @@ function selectOption(selectedOption, questionName) {
 function checkAnswers() {
     let score = 0;
     const questions = document.querySelectorAll('.question');
-
 
     // Loop through all questions and check the selected answer
     questions.forEach(question => {
@@ -144,9 +142,11 @@ function checkAnswers() {
 }
 
 const questions = document.querySelectorAll('[id^="cont"]');
+const main = document.getElementById('main');
 
 function showQuestion(index) {
     questions.forEach((question, i) => {
         question.style.display = i === index - 1 ? "block" : "none";
+        main.classList.add('d-none');
     });
 }
